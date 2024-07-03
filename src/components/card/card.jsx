@@ -4,7 +4,7 @@ export default function Card ({name , img}){
     return(
         <div className={styles.cardContainer}>
             <div className={styles.imgDiv}>
-                <img className={styles.flagImg} src={img} alt="India" />
+                <img className={styles.flagImg} src={img} alt={name} />
             </div>
             <h3>{name}</h3>
             {/* <div className={styles.flagNameContainer}>

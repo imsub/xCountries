@@ -1,4 +1,4 @@
-const URL_ENDPOINT = "https://restcountries.com/v3.1/all";
+const URL_ENDPOINT = "https://xcountries-backend.azurewebsites.net/all";
 
 export default async function getCountriesData(){
         try{

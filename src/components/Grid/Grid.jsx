@@ -13,7 +13,7 @@ export default function FlagGrid(){
         <div className={styles.gridContainer}>
             { 
             data.map((value) => {
-                return <Card name={value.name.common} img={value.flags.png} key={value.name.official} />
+                return <Card name={value.name} img={value.flag} key={value.abbr} />
             })
             }
         </div>
