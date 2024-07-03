@@ -7,14 +7,14 @@ export default function FlagGrid(){
     useEffect(()=>{
         getCountriesData().then(res =>{
             setData(res);
-            console.log(res);
-        });
+        }).catch(err => console.error("Error fetching data: ",err.message));
     },[])
     return (
         <div className={styles.gridContainer}>
-            {  data.length ? data.map((value) => {
+            { 
+            data.map((value) => {
                 return <Card name={value.name.common} img={value.flags.png} key={value.name.official} />
-                }) : <></>
+            })
             }
         </div>
     )

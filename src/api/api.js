@@ -9,6 +9,7 @@ export default async function getCountriesData(){
             return result;
         }
         catch(error){
-            console.error("Error fetching data: ",error.message)
+            //console.error("Error fetching data: ",error.message);
+            return error;
         }
 }
