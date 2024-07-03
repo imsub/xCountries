@@ -1,0 +1,27 @@
+.cardContainer{
+    width:200px;
+    height:200px;
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    text-align: center;
+    gap: 5px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.flagImg{
+    width:100px;
+    height:100px;
+}
+.imgDiv{
+    padding: 10px;
+    margin: 10px;
+}
+.flagNameContainer{
+    width:100px;
+    height: fit-content;
+}
