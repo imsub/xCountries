@@ -6,7 +6,7 @@ export default function FlagGrid(props){
         <div className={styles.gridContainer}>
             { 
             data.searchData.map((value) => {
-                return <Card name={value.name.common} img={value.flags.png} key={value.name.official} />
+                return <Card name={value.name.common} img={value.flags.svg} key={value.name.official} />
             })
             }
         </div>
