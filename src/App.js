@@ -18,7 +18,7 @@ function App() {
     }
     else{
       const filterData = data.data.filter((val)=>{
-        if(val.name.common.includes(inputValue)){
+        if(val.name.common.toLowerCase().includes(inputValue)){
             return val;
         }
         return false; 
