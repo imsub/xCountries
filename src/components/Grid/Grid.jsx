@@ -1,19 +1,12 @@
 import Card from "../card/card";
-import { useEffect,useState } from "react";
-import getCountriesData from "../../api/api";
 import styles from "./Grid.module.css";
-export default function FlagGrid(){
-    const [data,setData] = useState([]);
-    useEffect(()=>{
-        getCountriesData().then(res =>{
-            setData(res);
-        }).catch(err => console.error("Error fetching data: ",err.message));
-    },[])
+export default function FlagGrid(props){
+    const {data} = props;
     return (
-        <div className={styles.gridContainer}>
+        <div className={styles.countryCard}>
             { 
-            data.map((value) => {
-                return <Card name={value.name} img={value.flag} key={value.abbr} />
+            data.searchData.map((value) => {
+                return <Card name={value.name.common} img={value.flags.png} key={value.name.official} />
             })
             }
         </div>

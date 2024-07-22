@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+.inputContainer{
+  margin:2rem;
+  height:30px;
+  width:30%;
+  border-radius: 5px;
+}
