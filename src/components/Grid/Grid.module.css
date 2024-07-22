@@ -1,4 +1,4 @@
-.countryCard{
+.gridContainer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

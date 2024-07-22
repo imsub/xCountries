@@ -2,7 +2,7 @@
 import styles from "./Card.module.css";
 export default function Card ({name , img}){
     return(
-        <div className={styles.cardContainer}>
+        <div className={styles.countryCard}>
             <div className={styles.imgDiv}>
                 <img className={styles.flagImg} src={img} alt={name} />
             </div>
